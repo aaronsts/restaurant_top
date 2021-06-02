@@ -1,7 +1,53 @@
 * {
     padding: 0;
     margin: 0;
-    
+
     font-family: 'Open Sans', sans-serif;
 
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.header {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.image {
+    width: 100%;
+    height: 30vh;
+}
+
+.header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: Indie Flower;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 144px;
+    line-height: 210px;
+    /* identical to box height */
+
+    letter-spacing: 0.2em;
+
+    color: #F0F2F2;
+} 
+
+.body {
+    width: 50%;
+
+    margin-top: 3rem;
+    text-align: justify;
+}
+
+.body h2 {
+    padding-bottom: 1rem;
 }
