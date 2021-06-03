@@ -1,1 +1,3 @@
-console.log('Webpack running..')
+import {onPageLoad} from './initialize'
+
+onPageLoad();
