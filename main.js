@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"loadHomePage\": () => (/* binding */ loadHomePage)\n/* harmony export */ });\nconst loadHomePage = () => {\r\n    //Creating Elements..\r\n    const content = document.getElementById('content');\r\n\r\n    const bodyDiv = document.createElement('div');\r\n    const h2Title = document.createElement('h2');\r\n    const para1 = document.createElement('p');\r\n    const line = document.createElement('div');\r\n    const headshotImg = document.createElement('img');\r\n    const h3Title = document.createElement('h3');\r\n    const para2 = document.createElement('p');\r\n\r\n    // Adding Classes/attributes..\r\n    bodyDiv.id = 'home-container';\r\n    headshotImg.src = '../images/ben-parker-OhKElOkQ3RE-unsplash.jpg';\r\n    headshotImg.alt = 'headshot of person';\r\n\r\n    // Add text content..\r\n    h2Title.textContent = 'Het Ontstaan';\r\n    para1.textContent = 'Sam Pelgroms, gekend van Entrez, neemt samen met zijn vriendin Laura Nollet het gekende The Venue langs de A12 over. Ze vormen het legendarische pand om tot Palma en hopen tegen de heropening van de terrassen in de horeca ook de deuren te openen.'\r\n    h3Title.textContent = 'Chef';\r\n    para2.textContent = 'I love to cook vegan meals!'\r\n\r\n    // Adding to content div..\r\n    bodyDiv.appendChild(h2Title);\r\n    bodyDiv.appendChild(para1);\r\n    bodyDiv.appendChild(line);\r\n    bodyDiv.appendChild(headshotImg);\r\n    bodyDiv.appendChild(h3Title);\r\n    bodyDiv.appendChild(para2);\r\n\r\n    content.appendChild(bodyDiv);\r\n}\r\n\r\n\n\n//# sourceURL=webpack://restaurant_top/./src/home.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _initialize__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./initialize */ \"./src/initialize.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n\r\n\r\n\r\n(0,_initialize__WEBPACK_IMPORTED_MODULE_0__.onPageLoad)();\r\n\r\nconst eventHandlers = (() => {\r\n    const menuItem = document.getElementById('menu');\r\n    menuItem.addEventListener('click', () => {\r\n        const home = document.getElementById('home-container');\r\n        home.remove();\r\n        (0,_menu__WEBPACK_IMPORTED_MODULE_1__.loadMenuPage)();\r\n\r\n    })\r\n})();\n\n//# sourceURL=webpack://restaurant_top/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _initialize__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./initialize */ \"./src/initialize.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n\r\n\r\n\r\n\r\n(0,_initialize__WEBPACK_IMPORTED_MODULE_0__.onPageLoad)();\r\n\r\nconst eventHandlers = (() => {\r\n    const menuItem = document.getElementById('menu');\r\n    const homeItem = document.getElementById('home');\r\n    const contactItem = document.getElementById('contact');\r\n    menuItem.addEventListener('click', () => {\r\n        const home = document.getElementById('home-container');\r\n        home.remove();\r\n        (0,_menu__WEBPACK_IMPORTED_MODULE_2__.loadMenuPage)();\r\n\r\n    })\r\n    homeItem.addEventListener('click', () => {\r\n        document.getElementById('menu-container').remove();\r\n        (0,_home__WEBPACK_IMPORTED_MODULE_1__.loadHomePage)();\r\n    })\r\n})();\n\n//# sourceURL=webpack://restaurant_top/./src/index.js?");
 
 /***/ }),
 
@@ -36,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"loadMenuPage\": () => (/* binding */ loadMenuPage)\n/* harmony export */ });\nconst loadMenuPage = () => {\r\n    const content = document.getElementById('content');\r\n\r\n    const test = document.createElement('h1');\r\n    test.textContent = 'test test';\r\n    content.appendChild(test);\r\n}\r\n\r\n\n\n//# sourceURL=webpack://restaurant_top/./src/menu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"loadMenuPage\": () => (/* binding */ loadMenuPage)\n/* harmony export */ });\nconst loadMenuPage = () => {\r\n    const content = document.getElementById('content');\r\n    const menuContainer = document.createElement('div');\r\n\r\n    menuContainer.id = 'menu-container';\r\n    const test = document.createElement('h1');\r\n    test.textContent = 'test test';\r\n\r\n    menuContainer.appendChild(test);\r\n    content.appendChild(menuContainer)\r\n}\r\n\r\n\n\n//# sourceURL=webpack://restaurant_top/./src/menu.js?");
 
 /***/ })
 
