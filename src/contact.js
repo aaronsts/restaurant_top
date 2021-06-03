@@ -9,6 +9,7 @@ const loadContactPage = () => {
     const h3Title = document.createElement('h3');
     const para1 = document.createElement('p')
     const para2 = document.createElement('p');
+    const h3Title2 = document.createElement('h3');
     const mapCard = document.createElement('div');
 
     // Create the script tag, set the appropriate attributes
@@ -42,6 +43,7 @@ const loadContactPage = () => {
     h3Title.textContent = 'Phone & Email';
     para1.textContent = '0474 59 87 62';
     para2.textContent = 'palma@notreal.com';
+    h3Title2.textContent = 'Map';
     mapCard.id = 'map';
     contactCard.id = 'contact';
 
@@ -49,6 +51,7 @@ const loadContactPage = () => {
     contactCard.appendChild(h3Title);
     contactCard.appendChild(para1);
     contactCard.appendChild(para2);
+    contactCard.appendChild(h3Title2);
 
     contactContainer.appendChild(contactCard);
     contactContainer.appendChild(mapCard);

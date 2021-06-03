@@ -2,23 +2,22 @@ const loadMenuPage = () => {
     const content = document.getElementById('content');
     const menuContainer = document.createElement('div');
 
-    const h2Title = document.createElement('h2');
-    const contactCard = document.createElement('div');
-    const h3Title = document.createElement('h3');
-    const para1 = document.createElement('p')
-    const para2 = document.createElement('p');
+    const menuCard1 = document.createElement('div');
+    const h2Title1 = document.createElement('h2');
+    const img1 = document.createElement('img');
+
+    img1.src = '../images/vegan-curry.jpg';
+    img1.alt = 'vegan curry';
+
+    h2Title1.textContent = 'Vegan Curry';
 
     menuContainer.id = 'menu-container';
-    h2Title.textContent = 'Menu';
-    h3Title.textContent = 'Phone & Email'
-    para1.textContent = '0474 59 87 62';
-    para2.textContent = 'palma@notreal.com';
+    img1.classList.add('menu-img');
+    h2Title1.classList.add('menu-title');
 
-    menuContainer.appendChild(h2Title);
-    menuContainer.appendChild(h3Title);
-    menuContainer.appendChild(para1);
-    menuContainer.appendChild(para2);
-
+    menuCard1.appendChild(h2Title1);
+    menuCard1.appendChild(img1);
+    menuContainer.appendChild(menuCard1);
     content.appendChild(menuContainer)
 }
 
