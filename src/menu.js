@@ -4,7 +4,7 @@ const loadMenuPage = () => {
 
     menuContainer.id = 'menu-container';
     const test = document.createElement('h1');
-    test.textContent = 'test test';
+    test.textContent = 'Menu';
 
     menuContainer.appendChild(test);
     content.appendChild(menuContainer)

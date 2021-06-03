@@ -10,14 +10,33 @@ const eventHandlers = (() => {
     const homeItem = document.getElementById('home');
     const contactItem = document.getElementById('contact');
     menuItem.addEventListener('click', () => {
-        if ()
-        const home = document.getElementById('home-container');
-        home.remove();
-        loadMenuPage();
-
+        if (document.getElementById('home-container')){
+            document.getElementById('home-container').remove();
+            loadMenuPage();
+        }
+        if (document.getElementById('contact-container')){
+            document.getElementById('contact-container').remove();
+            loadMenuPage();
+        }
     })
     homeItem.addEventListener('click', () => {
-        document.getElementById('menu-container').remove();
-        loadHomePage();
+        if (document.getElementById('menu-container')){
+            document.getElementById('menu-container').remove();
+            loadHomePage();
+        }
+        if (document.getElementById('contact-container')){
+            document.getElementById('contact-container').remove();
+            loadHomePage();
+        }
+    })
+    contactItem.addEventListener('click', () => {
+        if (document.getElementById('menu-container')){
+            document.getElementById('menu-container').remove();
+            loadContactPage();
+        }
+        if (document.getElementById('home-container')){
+            document.getElementById('home-container').remove();
+            loadContactPage();
+        }
     })
 })();
