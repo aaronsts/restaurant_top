@@ -21,6 +21,7 @@
 .image {
     width: 100%;
     height: 30vh;
+    margin-bottom: 1rem;
 }
 
 .header h1 {
@@ -40,6 +41,27 @@
 
     color: #F0F2F2;
 } 
+
+.navbar {
+    height: 100px;
+    color: #F2B705;
+}
+
+a {
+    margin: 3rem;
+    padding: .3rem 2rem;
+
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    border-bottom: solid #F2B705 2px;
+}
+
+a:hover {
+    color: #F0F2F2;
+    background-color: #F2B705;
+    cursor: pointer;
+}
 
 .body {
     width: 50%;
