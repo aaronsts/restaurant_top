@@ -78,8 +78,8 @@ a:hover {
     width: 50%;
 
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
     text-align: justify;
 }
@@ -136,10 +136,13 @@ h3 {
     color: #83A603;
     background-color: #fff;
 
-
-
     padding: .5rem 1.8rem;
     margin-bottom: -2.4rem;
     margin-left: -3rem;
     z-index: 9;
+}
+
+.menu-title:hover {
+    cursor: pointer;
+    color:#F2B705;
 }
