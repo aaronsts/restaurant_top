@@ -20,7 +20,7 @@ const onPageLoad = () => {
 
     // Adding Classes/attributes..
     headerDiv.classList.add('header');
-    bodyDiv.classList.add('home-container');
+    bodyDiv.id = 'home-container';
     headerImg.classList.add('image');
     line.classList.add('line');
     headshotImg.classList.add('headshot-img');
