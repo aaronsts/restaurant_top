@@ -2,7 +2,6 @@ const onPageLoad = () => {
     //Creating Elements..
     const content = document.getElementById('content');
 
-    const homeContainer = document.createElement('div')
     const headerDiv = document.createElement('div');
     const title = document.createElement('h1');
     const headerImg = document.createElement('img');
@@ -20,9 +19,8 @@ const onPageLoad = () => {
     const para2 = document.createElement('p');
 
     // Adding Classes/attributes..
-    homeContainer.classList.add('home-container')
     headerDiv.classList.add('header');
-    bodyDiv.classList.add('body');
+    bodyDiv.classList.add('home-container');
     headerImg.classList.add('image');
     line.classList.add('line');
     headshotImg.classList.add('headshot-img');
@@ -64,10 +62,8 @@ const onPageLoad = () => {
     bodyDiv.appendChild(h3Title);
     bodyDiv.appendChild(para2);
 
-    homeContainer.appendChild(headerDiv);
-    homeContainer.appendChild(bodyDiv);
-
-    content.appendChild(homeContainer);
+    content.appendChild(headerDiv);
+    content.appendChild(bodyDiv);
 }
 
 export {
