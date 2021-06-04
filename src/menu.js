@@ -5,8 +5,9 @@ const loadMenuPage = () => {
 
     // Img 1
     const menuCard1 = document.createElement('div');
-    const h2Title1 = document.createElement('h2');
+    const h2Title1 = document.createElement('div');
     const img1 = document.createElement('img');
+    const overlay1 = document.createElement('div');
 
     img1.src = '../images/vegan-curry.jpg';
     img1.alt = 'vegan curry';
@@ -15,61 +16,55 @@ const loadMenuPage = () => {
 
     img1.classList.add('menu-img');
     h2Title1.classList.add('menu-title');
+    overlay1.classList.add('overlay');
+    menuCard1.classList.add('container');
 
-    menuCard1.appendChild(h2Title1);
+    overlay1.appendChild(h2Title1);
     menuCard1.appendChild(img1);
+    menuCard1.appendChild(overlay1);
     menuContainer.appendChild(menuCard1);
 
     // Img 2
     const menuCard2 = document.createElement('div');
-    const h2Title2 = document.createElement('h2');
+    const h2Title2 = document.createElement('div');
     const img2 = document.createElement('img');
+    const overlay2 = document.createElement('div');
 
-    img2.src = '../images/vegan-curry.jpg';
-    img2.alt = 'vegan curry';
+    img2.src = '../images/korean-bbq.jpg';
+    img2.alt = 'Korean BBQ';
 
-    h2Title2.textContent = 'Vegan Curry';
+    h2Title2.textContent = 'Korean BBQ';
 
     img2.classList.add('menu-img');
     h2Title2.classList.add('menu-title');
+    overlay2.classList.add('overlay');
+    menuCard2.classList.add('container');
 
-    menuCard2.appendChild(h2Title2);
+    overlay2.appendChild(h2Title2);
     menuCard2.appendChild(img2);
+    menuCard2.appendChild(overlay2);
     menuContainer.appendChild(menuCard2);
 
     // Img 3
     const menuCard3 = document.createElement('div');
-    const h2Title3 = document.createElement('h2');
+    const h2Title3 = document.createElement('div');
     const img3 = document.createElement('img');
+    const overlay3 = document.createElement('div');
 
-    img3.src = '../images/vegan-curry.jpg';
-    img3.alt = 'vegan curry';
+    img3.src = '../images/pasta.jpg';
+    img3.alt = 'Pasta with Kale';
 
-    h2Title3.textContent = 'Vegan Curry';
+    h2Title3.textContent = 'Pasta & Kale';
 
     img3.classList.add('menu-img');
     h2Title3.classList.add('menu-title');
+    overlay3.classList.add('overlay');
+    menuCard3.classList.add('container');
 
-    menuCard3.appendChild(h2Title3);
+    overlay3.appendChild(h2Title3);
     menuCard3.appendChild(img3);
+    menuCard3.appendChild(overlay3);
     menuContainer.appendChild(menuCard3);
-
-    // Img 3
-    const menuCard4 = document.createElement('div');
-    const h2Title4 = document.createElement('h2');
-    const img4 = document.createElement('img');
-
-    img4.src = '../images/vegan-curry.jpg';
-    img4.alt = 'vegan curry';
-
-    h2Title4.textContent = 'Vegan Curry';
-
-    img4.classList.add('menu-img');
-    h2Title4.classList.add('menu-title');
-
-    menuCard4.appendChild(h2Title4);
-    menuCard4.appendChild(img4);
-    menuContainer.appendChild(menuCard4);
 
     content.appendChild(menuContainer)
 }
