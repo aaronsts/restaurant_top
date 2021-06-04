@@ -9,7 +9,7 @@ const loadMenuPage = () => {
     const img1 = document.createElement('img');
     const overlay1 = document.createElement('div');
 
-    img1.src = '../images/vegan-curry.jpg';
+    img1.src = './images/vegan-curry.jpg';
     img1.alt = 'vegan curry';
 
     h2Title1.textContent = 'Vegan Curry';
@@ -30,7 +30,7 @@ const loadMenuPage = () => {
     const img2 = document.createElement('img');
     const overlay2 = document.createElement('div');
 
-    img2.src = '../images/korean-bbq.jpg';
+    img2.src = './images/korean-bbq.jpg';
     img2.alt = 'Korean BBQ';
 
     h2Title2.textContent = 'Korean BBQ';
@@ -51,7 +51,7 @@ const loadMenuPage = () => {
     const img3 = document.createElement('img');
     const overlay3 = document.createElement('div');
 
-    img3.src = '../images/pasta.jpg';
+    img3.src = './images/pasta.jpg';
     img3.alt = 'Pasta with Kale';
 
     h2Title3.textContent = 'Pasta & Kale';

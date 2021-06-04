@@ -30,10 +30,10 @@ const onPageLoad = () => {
     menuItem.id = 'menu';
     contactItem.id = 'contact';
 
-    headerImg.src = '../images/header-image.jpg';
+    headerImg.src = './images/header-image.jpg';
     headerImg.alt = 'image of food';
 
-    headshotImg.src = '../images/ben-parker-OhKElOkQ3RE-unsplash.jpg';
+    headshotImg.src = './images/ben-parker-OhKElOkQ3RE-unsplash.jpg';
     headshotImg.alt = 'headshot of person';
 
     // Add text content..

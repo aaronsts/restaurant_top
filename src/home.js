@@ -14,7 +14,7 @@ const loadHomePage = () => {
     bodyDiv.id = 'home-container';
     line.classList.add('line');
     headshotImg.classList.add('headshot-img');
-    headshotImg.src = '../images/ben-parker-OhKElOkQ3RE-unsplash.jpg';
+    headshotImg.src = './images/ben-parker-OhKElOkQ3RE-unsplash.jpg';
     headshotImg.alt = 'headshot of person';
 
     // Add text content..
